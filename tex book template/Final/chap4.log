@@ -1,0 +1,11 @@
+This is e-TeX, Version 3.141592-2.2 (MiKTeX 2.4) (preloaded format=latex 2005.12.3)  6 DEC 2005 10:11
+entering extended mode
+**chap4.tex
+(chap4.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8g> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, french, loaded.
+! Undefined control sequence.
+l.5 \chapter
+            { Laurent-Ore代数上模的分解}
+? 

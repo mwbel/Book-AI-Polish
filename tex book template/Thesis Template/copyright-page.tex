@@ -1,0 +1,13 @@
+\makeatletter
+\thispagestyle{copyright}
+\ifdefempty{\@faculty}{}{{\large\textsc{\@faculty}} \\}
+\ifdefempty{\@university}{}{{\large\textsc{\@university}} \\[1em]}
+\ifdefempty{\@publisher}{}{\textit{Published by:} \@publisher \\}
+\ifthenelse{\boolean{greet}}{\textit{Template by:} \textsc{\templateauthor }\\}{} 
+\ifdefempty{\@ams}{}{\textit{AMS Classification (2020):} \@ams.\\}
+\vfill
+\ifdefempty{\@city}{}{\@city, on \today\\}
+\copyright\,\the\year\, \textsc{The Authors}
+\doclicenseThis
+\cleardoublepage
+\makeatother

@@ -1,0 +1,43 @@
+\documentclass[12pt]{book}
+
+% 引入必要的包
+\usepackage[utf8]{inputenc}
+\usepackage{xeCJK}             % 支持中文
+\usepackage{fontspec}           % 字体设置
+\usepackage[margin=1in]{geometry} % 页边距设置，默认是1英寸，可以调窄些
+\setmainfont{Times New Roman}   % 英文字体
+\setCJKmainfont{PingFang SC}    % 中文字体 (适用于 macOS, 或者你可以根据系统更换)
+
+% 添加 hyperref 包来支持超链接
+\usepackage{hyperref}
+
+% fancyhdr 包设置页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% 定义 tightlist，解决 Pandoc 的 tightlist 错误
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% 加载 longtable 包，解决 longtable 环境未定义错误
+\usepackage{longtable}
+
+% 加载 booktabs 包，解决表格中 \toprule 等命令未定义错误
+\usepackage{booktabs}
+
+% 开始正文
+\begin{document}
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\frontmatter
+$if(toc)$
+\tableofcontents
+$endif$
+
+\mainmatter
+$body$
+
+\end{document}

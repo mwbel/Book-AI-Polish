@@ -1,0 +1,133 @@
+LaTeX Warning: Label `手写数字识别' multiply defined.
+LaTeX Warning: Label `sec:机器学习' multiply defined.
+LaTeX Warning: Label `def:-NoValue-' multiply defined.
+LaTeX Warning: Label `def:-NoValue-' multiply defined.
+LaTeX Warning: Label `eq:func_margin' multiply defined.
+LaTeX Warning: Label `eg_softSVM2' multiply defined.
+LaTeX Warning: Label `sub@eg_softSVM2' multiply defined.
+LaTeX Warning: Label `eg_softSVM-plot' multiply defined.
+LaTeX Warning: Label `XOR' multiply defined.
+LaTeX Warning: Label `认知世界：我们对自身了解多少？' multiply defined.
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Missing character: There is no ​ (U+200B) in font [texgyretermes-regular.otf]/O
+Missing character: There is no ​ (U+200B) in font [texgyretermes-regular.otf]/O
+Missing character: There is no ​ (U+200B) in font [texgyretermes-regular.otf]/O
+Missing character: There is no ​ (U+200B) in font [texgyretermes-regular.otf]/O
+Missing character: There is no ​ (U+200B) in font [texgyretermes-regular.otf]/O
+Missing character: There is no Ⅰ (U+2160) in font [texgyretermes-regular.otf]/O
+Missing character: There is no Ⅱ (U+2161) in font [texgyretermes-regular.otf]/O
+Missing character: There is no Ⅲ (U+2162) in font [texgyretermes-regular.otf]/O
+Missing character: There is no 。 ("3002) in font cmr12!
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+LaTeX Warning: Citation '周志华' on page 41 undefined on input line 263.
+LaTeX Warning: Citation '2016' on page 41 undefined on input line 263.
+Underfull \hbox (badness 2310) in paragraph at lines 407--407
+Underfull \hbox (badness 2310) in paragraph at lines 407--407
+Underfull \hbox (badness 2310) in paragraph at lines 407--407
+Underfull \hbox (badness 2310) in paragraph at lines 410--410
+Underfull \hbox (badness 2310) in paragraph at lines 410--410
+Overfull \hbox (6.4764pt too wide) in paragraph at lines 403--413
+Underfull \hbox (badness 1728) in paragraph at lines 429--430
+Underfull \hbox (badness 1484) in paragraph at lines 434--435
+LaTeX Warning: Command \O invalid in math mode on input line 111.
+Missing character: There is no Ø ("D8) in font cmmi12!
+LaTeX Warning: Citation 'WangJue2006MachineLearning' on page 66 undefined on in
+LaTeX Warning: Citation '机器学习：波澜壮阔40年， 2018' on page 66 undefined on input line
+LaTeX Warning: Citation 'LeCun et al.' on page 67 undefined on input line 71.
+LaTeX Warning: Citation '1998' on page 67 undefined on input line 71.
+LaTeX Warning: Citation 'mitchell2002' on page 68 undefined on input line 99.
+LaTeX Warning: Citation 'vladimir2000' on page 69 undefined on input line 109.
+LaTeX Warning: Citation 'hastie2015' on page 69 undefined on input line 110.
+Missing character: There is no ∗ ("2217) in font cmr8!
+Missing character: There is no ∗ ("2217) in font cmr8!
+Missing character: There is no − ("2212) in font cmr12!
+Missing character: There is no · ("B7) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no 。 ("3002) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no − ("2212) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no 𝑥 ("1D465) in font cmmi12!
+Missing character: There is no 𝑃 ("1D443) in font cmmi12!
+Missing character: There is no 𝑦 ("1D466) in font cmmi12!
+Missing character: There is no 𝒙 ("1D499) in font cmmi12!
+LaTeX Warning: Citation 'han2011data' on page 85 undefined on input line 667.
+Missing character: There is no ； ("FF1B) in font cmr12!
+Missing character: There is no ； ("FF1B) in font cmr12!
+Overfull \hbox (2.45514pt too wide) in paragraph at lines 913--915
+LaTeX Warning: Reference `fig:linear-svm' on page 90 undefined on input line 94
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Missing character: There is no ， ("FF0C) in font cmr12!
+Underfull \hbox (badness 10000) in paragraph at lines 1417--1441
+Underfull \hbox (badness 10000) in paragraph at lines 1501--1525
+Missing character: There is no 💡 (U+1F4A1) in font [texgyretermes-regular.otf]/
+Missing character: There is no 🔍 (U+1F50D) in font [texgyretermes-regular.otf]/
+Missing character: There is no 📊 (U+1F4CA) in font [texgyretermes-regular.otf]/
+Missing character: There is no 🎯 (U+1F3AF) in font [texgyretermes-regular.otf]/
+LaTeX Warning: Citation 'han2011data' on page 106 undefined on input line 1958.
+Overfull \hbox (160.21025pt too wide) in paragraph at lines 2069--2089
+LaTeX Warning: Citation 'Hinton' on page 110 undefined on input line 2128.
+Overfull \hbox (41.9671pt too wide) in paragraph at lines 282--329
+LaTeX Warning: Citation 'mcculloch43a' on page 121 undefined on input line 338.
+LaTeX Warning: Citation '张玉宏2018' on page 128 undefined on input line 580.
+LaTeX Warning: Reference `感知机模型' on page 128 undefined on input line 592.
+LaTeX Warning: Reference `感知机模型' on page 128 undefined on input line 600.
+Missing character: There is no ​ ("200B) in font cmr12!
+Missing character: There is no ​ ("200B) in font cmr12!
+LaTeX Warning: Citation '' on page 134 undefined on input line 840.
+LaTeX Warning: Citation '' on page 135 undefined on input line 884.
+LaTeX Warning: Reference `可解决“异或”问题的两层感知机' on page 137 undefined on input line 
+Missing character: There is no ​ ("200B) in font cmr12!
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+LaTeX Warning: Citation 'kingma2014adam' on page 151 undefined on input line 14
+LaTeX Warning: Citation 'bengio2012practical' on page 151 undefined on input li
+LaTeX Warning: Citation 'HORNIK1989359' on page 152 undefined on input line 143
+LaTeX Warning: Citation 'Cybenko1989' on page 152 undefined on input line 1434.
+Missing character: There is no 𝑥 ("1D465) in font cmmi12!
+Overfull \hbox (8.2951pt too wide) in paragraph at lines 1591--1609
+Missing character: There is no 𝑁 ("1D441) in font cmmi8!
+Missing character: There is no 𝑛 ("1D45B) in font cmmi12!
+Missing character: There is no 𝑁 ("1D441) in font cmmi8!
+LaTeX Warning: Citation 'HubelWiesel1968' on page 169 undefined on input line 4
+Missing character: There is no ​ (U+200B) in font [texgyretermes-regular.otf]/O
+LaTeX Warning: Citation 'FukushimaMiyake1982' on page 170 undefined on input li
+LaTeX Warning: Citation 'LeCunetal990' on page 170 undefined on input line 474.
+Missing character: There is no 𝑥 ("1D465) in font cmmi12!
+LaTeX Warning: Reference `平移不变性' on page 178 undefined on input line 718.
+Missing character: There is no ​ (U+200B) in font [texgyretermes-regular.otf]/O
+Overfull \hbox (832.06389pt too wide) detected at line 818
+Overfull \hbox (276.24524pt too wide) detected at line 828
+LaTeX Warning: Citation 'vaswani2017attention' on page 184 undefined on input l
+Missing character: There is no 𝑄 ("1D444) in font cmmi8!
+Missing character: There is no 𝐾 ("1D43E) in font cmmi8!
+Missing character: There is no 𝑇 ("1D447) in font cmmi6!
+Missing character: There is no 𝑑 ("1D451) in font cmmi8!
+Missing character: There is no 𝑘 ("1D458) in font cmmi6!
+Missing character: There is no ​ ("200B) in font cmr12!
+Missing character: There is no 𝑑 ("1D451) in font cmmi12!
+Missing character: There is no 𝑘 ("1D458) in font cmmi8!
+Missing character: There is no ​ (U+200B) in font [texgyretermes-regular.otf]/O
+Missing character: There is no ​ (U+200B) in font [texgyretermes-regular.otf]/O
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+LaTeX Warning: Empty bibliography on input line 65.
+Overfull \hbox (2.53815pt too wide) in paragraph at lines 18--19
+LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
+Package biblatex Warning: Please (re)run Biber on the file:
