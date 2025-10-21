@@ -1,0 +1,57 @@
+\contentsline {part}{第一部分\hspace {1em}追问智能}{1}{part.1}%
+\contentsline {chapter}{前言}{2}{chapter*.2}%
+\contentsline {section}{\numberline {0.1}从“困难重重”到“显而易见”：智能发展的历史辩证法}{2}{section.0.1}%
+\contentsline {section}{\numberline {0.2}数学史：智能追求的发展主线}{3}{section.0.2}%
+\contentsline {section}{\numberline {0.3}智能的层次：从模仿到创造}{3}{section.0.3}%
+\contentsline {section}{\numberline {0.4}数学：智能的基石与必然逻辑}{4}{section.0.4}%
+\contentsline {section}{\numberline {0.5}本书的使命与挑战}{4}{section.0.5}%
+\contentsline {section}{\numberline {0.6}致读者}{5}{section.0.6}%
+\contentsline {chapter}{\numberline {1} 引言 什么是智能？}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}什么是智能与人工智能}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}鹦鹉与乌鸦：何种智能?}{8}{section.1.2}%
+\contentsline {chapter}{\numberline {2}智能，生于数学 \\简明数学史}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}萌芽时期：从计数到位值制}{14}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}史前数学：日常需求与实用计算}{14}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}手指：长在身上的计数器}{14}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}荒岛上的自然教育，人类数字文明的缩影}{16}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}数字的位值系统}{17}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}位值制与对数增长在现代计算机中的应用}{18}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}数字：从具象到抽象}{18}{subsection.2.1.6}%
+\contentsline {section}{\numberline {2.2}初等数学时期：从计算到推理}{19}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}数学的真正诞生：从计算到推理}{19}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}毕达哥拉斯：数与宇宙的关系}{21}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}欧几里得：公理化体系的奠基人}{21}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}阿基米德：数学与物理的桥梁}{22}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}亚里士多德：逻辑与推理}{22}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}古希腊数学的遗产}{22}{subsection.2.2.6}%
+\contentsline {section}{\numberline {2.3}近代数学时期：变量、函数与微积分}{23}{section.2.3}%
+\contentsline {section}{\numberline {2.4}现代数学时期：抽象、结构与计算}{23}{section.2.4}%
+\contentsline {section}{\numberline {2.5} 三次数学危机：从无理数到不完备}{24}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}第一次危机：无理数的发现与算术信仰的破灭}{25}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}第二次数学危机：微积分基础的争议与解析}{25}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}第三次危机：集合论与逻辑的悖论}{26}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}小结}{28}{section.2.6}%
+\contentsline {chapter}{\numberline {3}智能，成于计算机 \\简明AI史}{30}{chapter.3}%
+\contentsline {section}{\numberline {3.1}AI的萌芽期：理论的起源与计算机的诞生}{30}{section.3.1}%
+\contentsline {section}{\numberline {3.2} 1950-1970年代：AI的奠基与早期探索}{32}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}达特茅斯会后早期黄金期：符号主义AI}{33}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}1980年-1987年：专家系统与知识工程的兴起}{36}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}代表性专家系统}{36}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}知识表示与规则推理}{36}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3} 知识工程的广泛应用}{37}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}新兴技术：模糊逻辑与贝叶斯网络}{37}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}第二次“AI 寒冬”的反思与转型}{37}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}人工智能的分化}{38}{section.3.4}%
+\contentsline {section}{\numberline {3.5}1990-2010年代：联结主义和机器学习的兴起}{39}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}2020年代：大语言模型（LLM）与生成式人工智能（AIGC）的崛起}{39}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}人工智能主要学派}{40}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}符号主义学派 (Symbolicism)}{40}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}联结学派/连接学派(Connectionism)：从神经网络到深度学习}{42}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}行为主义学派(Actionism)}{43}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}三大学派的比较}{44}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}三大学派对比总结}{44}{subsection.3.6.5}%
+\contentsline {section}{\numberline {3.7}小结：危机与机遇中的AI发展之旅}{47}{section.3.7}%
+\contentsline {chapter}{参考文献}{49}{chapter*.12}%
+\contentsline {part}{第二部分\hspace {1em}参考文献}{51}{part.2}%
+\contentsline {chapter}{致谢}{52}{chapter*.13}%
+\renewcommand {\cftchappresnum }{附录 }\renewcommand {\cftchapaftersnum }{}
