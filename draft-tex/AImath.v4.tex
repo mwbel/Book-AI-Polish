@@ -1,10 +1,12 @@
 % 让 Latex Workshop/TeX 引擎知道这是“主文件”
-% !TEX root = AImath.v4.tex
 
 % 放在 \documentclass 之前
 \PassOptionsToPackage{backend=biber,style=numeric-comp,sorting=nyt,refsegment=chapter,defernumbers=true}{biblatex}
 
 \documentclass[lang=cn,scheme=chinese,12pt]{elegantbook}
+
+% 显式加载 biblatex，确保使用 biber
+\usepackage{biblatex}
 
 %\usepackage[pass]{geometry}
 \title{人工智能的数学思维}
@@ -16,7 +18,11 @@
 %\bioinfo{自定义}{信息}
 
 %\extrainfo{不要以为抹消过去，重新来过，即可发生什么改变。--- 比企谷八幡}
-\setcounter{tocdepth}{3}
+% --- 全局：三层级（章→节→小节），编号与目录仅到小节 ---
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+% 版式统一：将 \subsubsection 呈现为段落式标题（与此前章节内的局部设置一致）
+\renewcommand\subsubsection{\paragraph}
 %\logo{logo-blue.png}
 \cover{cover.jpg}
 
@@ -100,62 +106,77 @@
 % \definecolor{customcolor}{RGB}{32,178,170}
 % \colorlet{coverlinecolor}{customcolor}
 
+% 不需要 ifthen；IfFileExists 属于 LaTeX 内核
+\makeatletter
+\newcommand{\preferInput}[1]{%
+  \begingroup
+  \def\@base{#1}%
+  \IfFileExists{\@base_polished.tex}{%
+    \typeout{[preferInput] -> Using \@base_polished.tex}%
+    \input{\@base_polished}%
+  }{%
+    \IfFileExists{\@base_refined.tex}{%
+      \typeout{[preferInput] -> Using \@base_refined.tex}%
+      \input{\@base_refined}%
+    }{%
+      \typeout{[preferInput] -> Fallback to \@base.tex}%
+      \input{\@base}%
+    }%
+  }%
+  \endgroup
+}
+\makeatother
+
+
+
 \begin{document}
 \maketitle
 
-
 \frontmatter
 % 前言/致谢/目录等（无编号）
+
+\preferInput{chapters/00自序}
+\preferInput{chapters/01他序}
+
 \tableofcontents
 
 \mainmatter   % ★ 从这里开始：第1章、第2章……
 
+\preferInput{chapters/0-Intro.v2}
+
 % ===== 正文章节 =====
-
 \part{追问智能}
-\include{0-Intro}
-\include{1-Def}  % 什么是智能
-\include{2-History-Math.v2.1} % 智能，生于数学
-\include{3-History-computer}  % 智能，成于计算机
+\preferInput{chapters/1-Def.v1}  % 什么是智能
+\preferInput{chapters/2-History-Math.v3.2-conservative} % 智能，生于数学
+% \preferInput{chapters/2-History-Math.v3.1} % 智能，生于数学（旧版本，备选）
+\preferInput{chapters/3-History-computer.v1}  % **MOD** 更新至最新存在版本（v1）
 
-%\part{学习的逻辑}
-%\include{3-Thinking}  % 人工智能的三种思维
-%\include{4-Tools}
-%\include{5-ML.v2} % 机器学习：学习如何学习
-%\include{6ML2DL} % 从传统机器学习到深度学习
-%\include{7-DL} % 深度学习，真的行
-%%\include{阅读地图}
-%
-%\part{理解的边界}
-%\include{8-深度学习的挑战与幻觉} % 技术挑战
-%\include{9-AI的边界：图灵机、哥德尔与计算的极限} % 理论边界
-%\include{10-符号、神经与因果：智能的三种建构方式} % 智能的建构方式
-%\include{11-智能的物理基础：从熵到量子计算} % 智能的物理基础
-%
-%\part{回归与超越}
-%\include{12-语言中的智能：Transformer的意外胜利} % AI对语言的"结构感知"代表突破范式
-%\include{13-AI+}  % AI的应用与发展
-%\include{14-理解智能的尽头：理性与取舍的未来} % 人类对"智能"定义的终极反思
-%\include{15-伦理与挑战}
-%
-%\include{8-RL} 
-%
-%\part{尾声}
-%\include{16-Conclusion}
+\part{学习的逻辑}
+\preferInput{chapters/3-Thinking.v1}  % **MOD** 更新版本 - 三种思维方法论
+\preferInput{chapters/4-Tools.v1}  % **MOD** 更新版本 - 数学工具基础
+\preferInput{chapters/5-ML.v3}  
+\preferInput{chapters/6ML2DL.v1} % **MOD** 更新版本 - 从机器学习到深度学习
+\preferInput{chapters/7-DL.v1} % **MOD** 更新版本 - 深度学习实践
+%\input{阅读地图}
 
+\part{理解的边界}
+\preferInput{chapters/8-深度学习的挑战与幻觉.v4} % **MOD** 二次扩写更新版本
+\preferInput{chapters/9-AI的边界：图灵机、哥德尔与计算的极限.v3} % **MOD** 二次扩写更新版本
+\preferInput{chapters/10-符号、神经与因果：智能的三种建构方式.v3} % **MOD** 二次扩写更新版本
+\preferInput{chapters/11-智能的物理基础：从熵到量子计算.v3} % **MOD** 二次扩写更新版本
 
-\part{参考文献}
-\include{reference.bib}
+\part{回归与超越}
+\preferInput{chapters/12-语言中的智能：Transformer的意外胜利.v3} 
+% **MOD** 二次扩写更新版本
+\preferInput{chapters/13-AI+.v3} 
+% **MOD** 二次扩写更新版本
+\preferInput{chapters/14-理解智能的尽头：理性与取舍的未来.v3} % **MOD** 二次扩写更新版本
+\preferInput{chapters/15-伦理与挑战.v3} % **MOD** 二次扩写更新版本
 
-\include{17-Ack}
+\part{向上的道路}
+\preferInput{chapters/16-Conclusion.v1} % **MOD** 二次扩写更新版本
 
-%% ===== 从这里才进入附录（只写一次）=====
-\appendix                  % ★ 只在主文件出现这一行
-
-%\include{18-Append}
-\input{glossary.tex} 
-\input{symbol_table.tex}
-
-\backmatter   
+\nocite{*}
+\printbibliography[heading=bibintoc, title=参考文献]
 
 \end{document}

@@ -862,11 +862,11 @@
 % \newlength{\normalparindent}
 % \setlength{\normalparindent}{\parindent}
 \ifdefstring{\ELEGANT@mode}{fancy}{
+  % 精简 tcolorbox 样式，避免复杂 overlay/attach 造成参数解析问题
   \tcbset{
     common/.style={
       fontupper=\citshape,
       lower separated=false,
-      % before upper={\setlength{\parindent}{\normalparindent}},
       coltitle=white,
       colback=gray!5,
       boxrule=0.5pt,
@@ -874,117 +874,36 @@
       enhanced,
       breakable,
       top=8pt,
-      before skip=8pt,
-      attach boxed title to top left={
-        yshift=-0.11in,
-        xshift=0.15in},
-      boxed title style={
-        boxrule=0pt,
-        colframe=white,
-        arc=0pt,
-        outer arc=0pt},
-      separator sign={.},},
+      before skip=8pt
+    },
     defstyle/.style={
       common,
-      colframe=main,  
+      colframe=main,
       colback=main!5,
-      colbacktitle=main, 
-      overlay unbroken and last={
-        \node[anchor=south east, outer sep=0pt] at (\linewidth-width,0) {
-          \textcolor{main}{$\clubsuit$}};}},
+      colbacktitle=main
+    },
     thmstyle/.style={
       common,
-      colframe=second,  
+      colframe=second,
       colback=second!5,
-      colbacktitle=second, 
-      overlay unbroken and last={
-        \node[anchor=south east, outer sep=0pt] at (\linewidth-width,0) {
-          \textcolor{second}{$\heartsuit$}};}},
+      colbacktitle=second
+    },
     propstyle/.style={
       common,
-      colframe=third,  
+      colframe=third,
       colback=third!5,
-      colbacktitle=third, 
-      overlay unbroken and last={
-        \node[anchor=south east, outer sep=0pt] at (\linewidth-width,0) {
-          \textcolor{third}{$\spadesuit$}};}},}
-  % \newtcbtheorem[auto counter,number within=chapter]{definition}{\definitionname}{defstyle}{def}
-  \DeclareTColorBox[auto counter,number within=\ELEGANT@thmcnt]{definition}{ g o t\label g }{
-    common,defstyle,
-    IfValueTF={#1}
-      {title={\definitionname~\thetcbcounter\ (#1)}}
-      {
-        IfValueTF={#2} 
-          {title={\definitionname~\thetcbcounter\ (#2)}}
-          {title=\definitionname~\thetcbcounter}
-      },
-    IfBooleanTF={#3}{label=#4}{label={def:#4}}}
-  % \newtcbtheorem[auto counter,number within=chapter]{theorem}{\theoremname}{thmstyle}{thm}
-  \DeclareTColorBox[auto counter,number within=\ELEGANT@thmcnt]{theorem}{ g o t\label g }{
-    common,thmstyle,
-    IfValueTF={#1}
-      {title={\theoremname~\thetcbcounter\ (#1)}}
-      {
-        IfValueTF={#2} 
-          {title={\theoremname~\thetcbcounter\ (#2)}}
-          {title=\theoremname~\thetcbcounter}
-      },
-    IfBooleanTF={#3}{label=#4}{label={thm:#4}}}
-  % \newtcbtheorem[auto counter,number within=chapter]{postulate}{\postulatename}{thmstyle}{pos}
-  \DeclareTColorBox[auto counter,number within=\ELEGANT@thmcnt]{postulate}{ g o t\label g }{
-    common,thmstyle,
-    IfValueTF={#1}
-      {title={\postulatename~\thetcbcounter\ (#1)}}
-      {
-        IfValueTF={#2} 
-          {title={\postulatename~\thetcbcounter\ (#2)}}
-          {title=\postulatename~\thetcbcounter}
-      },
-    IfBooleanTF={#3}{label=#4}{label={pos:#4}}}
-  % \newtcbtheorem[auto counter,number within=chapter]{axiom}{\axiomname}{thmstyle}{axi}
-  \DeclareTColorBox[auto counter,number within=\ELEGANT@thmcnt]{axiom}{ g o t\label g }{
-    common,thmstyle,
-    IfValueTF={#1}
-      {title={\axiomname~\thetcbcounter\ (#1)}}
-      {
-        IfValueTF={#2} 
-          {title={\axiomname~\thetcbcounter\ (#2)}}
-          {title=\axiomname~\thetcbcounter}
-      },
-    IfBooleanTF={#3}{label=#4}{label={axi:#4}}}
-  % \newtcbtheorem[auto counter,number within=chapter]{corollary}{\corollaryname}{thmstyle}{cor}
-  \DeclareTColorBox[auto counter,number within=\ELEGANT@thmcnt]{corollary}{ g o t\label g }{
-    common,thmstyle,
-    IfValueTF={#1}
-      {title={\corollaryname~\thetcbcounter\ (#1)}}
-      {
-        IfValueTF={#2} 
-          {title={\corollaryname~\thetcbcounter\ (#2)}}
-          {title=\corollaryname~\thetcbcounter}
-      },
-    IfBooleanTF={#3}{label=#4}{label={cor:#4}}}
-  % \newtcbtheorem[auto counter,number within=chapter]{lemma}{\lemmaname}{thmstyle}{lem}
-  \DeclareTColorBox[auto counter,number within=\ELEGANT@thmcnt]{lemma}{ g o t\label g }{
-    common,thmstyle,
-    IfValueTF={#1}
-      {title={\lemmaname~\thetcbcounter\ (#1)}}
-      {
-        IfValueTF={#2} 
-          {title={\lemmaname~\thetcbcounter\ (#2)}}
-          {title=\lemmaname~\thetcbcounter}
-      },
-    IfBooleanTF={#3}{label=#4}{label={lem:#4}}}
-  % \newtcbtheorem[auto counter,number within=chapter]{proposition}{\propositionname}{propstyle}{pro}
-  \DeclareTColorBox[auto counter,number within=\ELEGANT@thmcnt]{proposition}{ g o t\label g }{
-    common,propstyle,
-    IfValueTF={#1}
-      {title={\propositionname~\thetcbcounter\ (#1)}}
-      {
-        IfValueTF={#2} 
-          {title={\propositionname~\thetcbcounter\ (#2)}}
-          {title=\propositionname~\thetcbcounter}
-      },
-    IfBooleanTF={#3}{label=#4}{label={pro:#4}}}
+      colbacktitle=third
+    }
+  }
+  % 采用 newtcbtheorem 恢复稳定的定理环境定义，移除自动 label
+  \newtcbtheorem[auto counter,number within=\ELEGANT@thmcnt]{definition}{\definitionname}{defstyle}{def}
+  \newtcbtheorem[auto counter,number within=\ELEGANT@thmcnt]{theorem}{\theoremname}{thmstyle}{thm}
+  \newtcbtheorem[auto counter,number within=\ELEGANT@thmcnt]{postulate}{\postulatename}{thmstyle}{pos}
+  \newtcbtheorem[auto counter,number within=\ELEGANT@thmcnt]{axiom}{\axiomname}{thmstyle}{axi}
+  \newtcbtheorem[auto counter,number within=\ELEGANT@thmcnt]{corollary}{\corollaryname}{thmstyle}{cor}
+  \newtcbtheorem[auto counter,number within=\ELEGANT@thmcnt]{lemma}{\lemmaname}{thmstyle}{lem}
+  \newtcbtheorem[auto counter,number within=\ELEGANT@thmcnt]{proposition}{\propositionname}{propstyle}{pro}
+
 }{\relax}
 
 
