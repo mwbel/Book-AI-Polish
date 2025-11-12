@@ -1,0 +1,7 @@
+title: 任务3｜恢复缺失结构
+prompt: |
+  根据检测出的缺失清单，将基础版本中的对应环境（figure、equation等）
+  原样插入 polished 文本相应位置。
+  保留 label、caption 与选项。
+  在每处恢复后添加 "% RESTORED from base" 注释。
+  不修改正文。
