@@ -1,0 +1,6 @@
+title: 任务4｜正文润色
+prompt: |
+  在以下 LaTeX 文本中：
+  - 只润色正文文字，保持 LaTeX 环境原样。
+  - 不改动 figure、equation、$$...$$、\label{} 等结构。
+  - 输出“原文 → % ChatGPT建议 → % 修改后版本”的对照结果。

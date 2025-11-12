@@ -1,0 +1,7 @@
+title: 任务1｜结构清单提取
+prompt: |
+  请从以下 LaTeX 文本中提取所有：
+  - \begin{figure}...\end{figure}（含编号、label、caption）
+  - 数学环境（$$...$$、equation、align、gather等）
+  输出一个结构清单，按出现顺序列出。
+  不修改原文。

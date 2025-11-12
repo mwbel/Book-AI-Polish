@@ -1,0 +1,5 @@
+title: 任务5｜章节导语补全
+prompt: |
+  若章节开头有 \begin{introduction}[\faBook\;本章提要\;\faBook]，
+  请参考同样格式添加 \begin{introduction}[\faStar\;你将收获\;\faStar] 段落，
+  列出3–5条学习收获，风格与本章提要一致。

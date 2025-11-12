@@ -1,0 +1,7 @@
+title: BookPolishWorkflow｜章节对照修复与风格统一
+steps:
+  - use: 1-structure-extract.yaml
+  - use: 2-detect-missing.yaml
+  - use: 3-restore-structure.yaml
+  - use: 4-polish-text.yaml
+  - use: 5-intro-add.yaml
