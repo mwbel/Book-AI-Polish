@@ -106,53 +106,40 @@
 }{}
 
 \usepackage{fontawesome5}
-
 % -----------------------------------------------------------------------------
-% preferInput 宏（方案A：以 polished 为主线）
-% 约定的版本优先级（从高到低）：
-%   1) *_polished_unified.tex     —— 逐章风格统一后的最终稿（当前主线）
-%   2) *_polished.tex             —— 对照式定稿（你项目现用主线）
-%
-% 依赖：仅使用 LaTeX 内核 \IfFileExists（无需 ifthen 等宏包）
-% 日志：每次选择会在编译日志中输出 [preferInput] -> Using ... 便于排查
-% 用法：\preferInput{chapters/00-Intro}
+% preferInput（精简版：仅 polished_unified / polished / 基础）
+% 优先级：*_polished_unified.tex > *_polished.tex > *.tex
 % -----------------------------------------------------------------------------
 \makeatletter
 \newcommand{\preferInput}[1]{%
   \begingroup
-  % 基础名（不含后缀），例如 chapters/00-Intro
-  \def\@base{#1}%
-  % 预构造完整文件名（含 .tex 扩展名），避免展开期拼接问题
-  \edef\@A{\@base_polished_unified.tex}%
-  \edef\@B{\@base_polished.tex}%
-  \edef\@E{\@base.tex}%
-  %
-  % 按优先级依次查找并输入
-  \IfFileExists{\@A}{%
-    \typeout{[preferInput] -> Using \@A}%
-    \input{\@A}%
+  \edef\prefBase{#1}%
+  \edef\prefA{\prefBase\detokenize{_polished_unified.tex}}%
+  \edef\prefB{\prefBase\detokenize{_polished.tex}}%
+  \edef\prefC{\prefBase\detokenize{.tex}}%
+  \IfFileExists{\prefA}{%
+    \typeout{[preferInput] -> Using \prefA}%
+    \input{\prefA}%
   }{%
-    \IfFileExists{\@B}{%
-      \typeout{[preferInput] -> Using \@B}%
-      \input{\@B}%
+    \IfFileExists{\prefB}{%
+      \typeout{[preferInput] -> Using \prefB}%
+      \input{\prefB}%
     }{%
-      \IfFileExists{\@C}{%
-        \typeout{[preferInput] -> Using \@C}%
-        \input{\@C}%
-      }{%
-        \IfFileExists{\@D}{%
-          \typeout{[preferInput] -> Using \@D}%
-          \input{\@D}%
-        }{%
-          \typeout{[preferInput] -> Fallback to \@E}%
-          \input{\@E}%
-        }%
-      }%
+      \typeout{[preferInput] -> Fallback to \prefC}%
+      \input{\prefC}%
     }%
   }%
   \endgroup
 }
 \makeatother
+% -----------------------------------------------------------------------------
+% 小贴士：
+% - 主文件里务必把上面的宏定义放在 \begin{document} 之前
+% - 章节调用示例：\preferInput{chapters/2-History-Math.v3.2}
+% - chapters/ 下的文件名请使用 ASCII 连字符 '-'（不是中文破折号/短横），避免隐形空格
+% - 建议统一：% !TEX root = ../AImath.v5.tex（位于各章节首行）
+% -----------------------------------------------------------------------------
+
 
 \begin{document}
 \maketitle
@@ -172,7 +159,7 @@
 % ===== 正文章节 =====
 \part{追问智能}
 \preferInput{chapters/1-Def.v1}  % 什么是智能
-\preferInput{chapters/2-History-Math.v3.2-polished} % 智能，生于数学
+\preferInput{chapters/2-History-Math.v3.2} % 智能，生于数学
 % \preferInput{chapters/2-History-Math.v3.1} % 智能，生于数学（旧版本，备选）
 \preferInput{chapters/3-History-computer.v1}  % **MOD** 更新至最新存在版本（v1）
 
